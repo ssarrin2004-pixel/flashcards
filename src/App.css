@@ -36,14 +36,40 @@ p {
   transform: scale(1.02);
 }
 
-.card-front {
-  color: #333;
+.card.correct {
+  background-color: #55efc4;
+}
+
+.card.incorrect {
+  background-color: #ff7675;
 }
 
 .card-back {
-  color: #d63031;
+  color: #333;
   font-weight: bold;
   font-size: 1.5rem;
+}
+
+.guess-section {
+  margin: 20px auto;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+input {
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  width: 250px;
+}
+
+.nav-buttons {
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
 }
 
 button {
@@ -54,9 +80,13 @@ button {
   font-size: 1rem;
   border-radius: 8px;
   cursor: pointer;
-  margin-top: 10px;
 }
 
 button:hover {
   background-color: #555;
+}
+
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
 }
